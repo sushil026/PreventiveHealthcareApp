@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/mainbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Predict Disease by Symptoms:"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/smp1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Symptom 1" />
+
+            <EditText
+                android:id="@+id/smp2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Symptom 2" />
+
+            <EditText
+                android:id="@+id/smp3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Symptom 3" />
+
+            <EditText
+                android:id="@+id/smp4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Symptom 4"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/plus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/plus" />
+
+            <EditText
+                android:id="@+id/smp5"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Symptom 5"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/diagnose"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="DIAGNOSE" />
+
+            <TextView
+                android:id="@+id/res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Predicted diseases are:\n"
+                android:textSize="20dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="45dp"
+            android:src="@drawable/user" />
+    </RelativeLayout>
+</FrameLayout>
